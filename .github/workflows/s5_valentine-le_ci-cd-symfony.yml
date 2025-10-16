@@ -24,6 +24,9 @@ jobs:
           php-version: "8.2"
           coverage: pcov
 
+      - name: Debug - List files
+        run: ls -R
+
       - name: Install dependencies
         working-directory: ressources/s5/valentine-le/projets/ci-cd-symfony
         run: composer install --no-progress --prefer-dist --no-scripts
